@@ -1,8 +1,13 @@
+body{
+    margin: 0;
+}
+
 .header{
     background-color: #D78521;
-    margin: -8px;
+    margin: 0px;
     display: flex;
     align-items: center;
+    flex-grow: 2;
 }
 
 .circle{
@@ -12,6 +17,7 @@
     justify-content: center;
     justify-self: flex-start;
     align-items: center;
+    flex-shrink: 0;
     
 }
 /*
@@ -39,6 +45,17 @@ colours:
     gap: 20px
 }
 
+.circle{
+    width: 60px;
+    height: 60px;
+    font-size: xx-large;
+    background-color: #F2D398;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
 .title-text{
     font-family: 'Courier New', Courier, monospace;
     color: wheat;
@@ -53,4 +70,40 @@ colours:
     color: wheat;
     padding: 12px;
     flex-shrink: 0;
+}
+
+/**/
+
+.body{
+    padding: 16px;
+    margin: 0px;
+    display:flex;
+    flex-direction: column;
+    background-color: #F2D398;
+}
+
+.body img{
+    margin: 16px;
+    border-radius: 16%;
+}
+
+.first-block{
+    display: flex;
+    padding-bottom: 100px;
+}
+.text-block{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 64px;
+    text-align: center;
+    margin: 12px;
+    padding: 12px;
+    align-self: flex-start;
+    
+
+}
+
+.second-block{
+    display: flex;
+    background-color: #F2D398;
 }
